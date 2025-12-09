@@ -144,5 +144,34 @@ window.addEventListener("mouseout", function () {
   mouse.y = undefined;
 });
 
+//scroll event for Alejandro logo opacity and Portfolio h1
+window.addEventListener("scroll", function () {
+  const scrollPosition =
+    window.pageYOffset || document.documentElement.scrollTop;
+  const svg1 = document.querySelector(".svg1-container");
+  const svg2 = document.querySelector(".svg2-container");
+  const portfolioH1 = document.querySelector("header h1");
+
+  if (svg1 && svg2) {
+    // Start fading at scroll position 50, fully faded at 200
+    const maxScroll = 200;
+    const minOpacity = 0.3;
+    const scrollFactor = Math.min(scrollPosition / maxScroll, 1);
+    const opacity = 1 - scrollFactor * (1 - minOpacity);
+
+    svg1.style.opacity = opacity;
+    svg2.style.opacity = opacity;
+  }
+
+  if (portfolioH1) {
+    // Start fading Portfolio immediately, fully invisible at 100px scroll
+    const maxScroll = 100;
+    const scrollFactor = Math.min(scrollPosition / maxScroll, 1);
+    const opacity = 0.5 * (1 - scrollFactor); // Start at 0.5, fade to 0
+
+    portfolioH1.style.opacity = opacity;
+  }
+});
+
 init();
 animate();

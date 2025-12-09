@@ -63,128 +63,103 @@
       </div>
     </header>
 
-    <main>
-      <section id="description-section">
-        <h1 class="green">About Me</h1>
-        <p class="typeText">I'm a passionate developer</p>
-        <p class="typeText">with experience in front-end web development</p>
-        <p class="typeTextII">and system automation solutions.</p>
-      </section>
+    <div class="content-wrapper">
+      <main>
+        <section id="description-section">
+          <h1 class="green">About Me</h1>
+          <p class="typeText">I'm a passionate developer</p>
+          <p class="typeText">with experience in front-end web development</p>
+          <p class="typeTextII">and system automation solutions.</p>
+        </section>
 
-      <section id="skills-section">
-        <div class="skills-container">
-          <h1 class="green">My Skills</h1>
-          <div class="framework-icons">
-            <i class="fab fa-react react"></i>
-            <i class="fab fa-angular angular"></i>
-            <i class="fab fa-node node"></i>
-            <i class="fab fa-js js"></i>
-            <i class="fab fa-aws aws"></i>
-            <i class="fab fa-microsoft azure"></i>
+        <section id="skills-section">
+          <div class="skills-container">
+            <h1 class="green">My Skills</h1>
+            <div class="framework-icons">
+              <i class="fab fa-react react"></i>
+              <i class="fab fa-angular angular"></i>
+              <i class="fab fa-node node"></i>
+              <i class="fab fa-js js"></i>
+              <i class="fab fa-aws aws"></i>
+              <i class="fab fa-microsoft azure"></i>
+            </div>
+          </div>
+          <button
+            id="last-btn"
+            class="buttons"
+            onclick="const link=document.createElement('a');link.href='./Alejandro_Professional_CV_(2026).pdf';link.download='Alejandro_Professional_CV_(2026).pdf';link.click();"
+          >
+            Download CV
+          </button>
+        </section>
+      </main>
+
+      <aside id="aside-window">
+        <section id="description-sectionII">
+          <h1 class="green secondH1">Need help with a project?</h1>
+          <p>Book a free 15 min consultation</p>
+          <a
+            class="buttons anchor"
+            href="https://calendly.com/alejandrobusiness2022/30min"
+            target="_blank"
+            >Book Now</a
+          >
+        </section>
+
+        <div class="dividers"></div>
+        <div class="words1" id="presentations">
+          <h1 class="green">Presentations</h1>
+        </div>
+
+        <div class="iframesRow">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.loom.com/embed/3b55918fc74d49099f9fb3d5b3b803d7?sid=6755b290-fdaf-491d-a2d7-423b67c58a65"
+              frameborder="0"
+              allow="fullscreen; web-share"
+              loading="lazy"
+            >
+            </iframe>
           </div>
         </div>
-        <button
-          id="last-btn"
-          class="buttons"
-          onclick="const link=document.createElement('a');link.href='./Alejandro_Professional_CV_(2026).pdf';link.download='Alejandro_Professional_CV_(2026).pdf';link.click();"
-        >
-          Download CV
-        </button>
-      </section>
-    </main>
-    <canvas id="canvas1"></canvas>
 
-    <aside id="aside-window">
-      <section id="description-sectionII">
-        <h1 class="green secondH1">Need help with a project?</h1>
-        <p>Book a free 15 min consultation</p>
-        <a
-          class="buttons anchor"
-          href="https://calendly.com/alejandrobusiness2022/30min"
-          target="_blank"
-          >Book Now</a
-        >
-      </section>
-
-      <div class="dividers"></div>
-      <div class="words1" id="presentations">
-        <h1 class="green">Presentations</h1>
-      </div>
-
-      <div class="iframesRow">
-        <div
-          style="
-            position: relative;
-            width: 100%;
-            height: 0;
-            padding-bottom: 62.5%;
-          "
-        >
+        <div class="video-wrapper">
           <iframe
-            src="https://www.loom.com/embed/3b55918fc74d49099f9fb3d5b3b803d7?sid=6755b290-fdaf-491d-a2d7-423b67c58a65"
+            src="https://www.loom.com/embed/1ac16b5f71884014b23144645ad48985?sid=4d4b8af7-06f0-4648-bd22-6f7ff4bb2508"
             frameborder="0"
-            allow="fullscreen; web-share"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen
             loading="lazy"
-            style="
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-            "
-          >
-          </iframe>
+          ></iframe>
         </div>
-      </div>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.loom.com/embed/1162c2f8bf934a1b9404e4c58d6b0979?sid=824bff17-aa89-4450-b561-943c8d552413"
+            frameborder="0"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.loom.com/embed/3a82d4fb805248c284ee383b31721e04?sid=3abf0b87-a3ea-4a28-9bc1-db93234712bf"
+            frameborder="0"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="dividers"></div>
 
-      <div style="position: relative; padding-bottom: 62.5%; height: 0">
-        <iframe
-          src="https://www.loom.com/embed/1ac16b5f71884014b23144645ad48985?sid=4d4b8af7-06f0-4648-bd22-6f7ff4bb2508"
-          frameborder="0"
-          webkitallowfullscreen
-          mozallowfullscreen
-          allowfullscreen
-          loading="lazy"
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
-        ></iframe>
-      </div>
-      <div
-        style="position: relative; padding-bottom: 56.975505857295%; height: 0"
-      >
-        <iframe
-          src="https://www.loom.com/embed/1162c2f8bf934a1b9404e4c58d6b0979?sid=824bff17-aa89-4450-b561-943c8d552413"
-          frameborder="0"
-          webkitallowfullscreen
-          mozallowfullscreen
-          allowfullscreen
-          loading="lazy"
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
-        ></iframe>
-      </div>
-      <div
-        style="
-          position: relative;
-          padding-bottom: 44.99999999999999%;
-          height: 0;
-        "
-      >
-        <iframe
-          src="https://www.loom.com/embed/3a82d4fb805248c284ee383b31721e04?sid=3abf0b87-a3ea-4a28-9bc1-db93234712bf"
-          frameborder="0"
-          webkitallowfullscreen
-          mozallowfullscreen
-          allowfullscreen
-          loading="lazy"
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
-        ></iframe>
-      </div>
-      <div class="dividers"></div>
+        <div class="dividers"></div>
+        <h1 class="green">Let's connect!</h1>
 
-      <div class="dividers"></div>
-      <h1 class="green">Let's connect!</h1>
-
-      <section id="contact">
-        <!-- <form id="form">
+        <section id="contact">
+          <!-- <form id="form">
           <div class="item1">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" />
@@ -207,20 +182,22 @@
           >
             Send
           </button> -->
-        <div class="soMe-container">
-          <div class="soMeLinks one">
-            <a
-              href="https://www.linkedin.com/in/alejandro-gispert/"
-              target="_blank"
-              ><i class="fab fa-linkedin-in"></i> LinkedIn</a
-            >
-            <a href="https://github.com/AlejandroGispert" target="_blank"
-              ><i class="fab fa-github"></i> GitHub</a
-            >
+          <div class="soMe-container">
+            <div class="soMeLinks one">
+              <a
+                href="https://www.linkedin.com/in/alejandro-gispert/"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i> LinkedIn</a
+              >
+              <a href="https://github.com/AlejandroGispert" target="_blank"
+                ><i class="fab fa-github"></i> GitHub</a
+              >
+            </div>
           </div>
-        </div>
-      </section>
-    </aside>
+        </section>
+      </aside>
+    </div>
+    <canvas id="canvas1"></canvas>
 
     <footer>
       <p>&copy; 2024 Alejandro Gispert. All rights reserved.</p>
