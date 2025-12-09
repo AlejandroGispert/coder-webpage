@@ -25,10 +25,6 @@ header nav {
   box-sizing: border-box;
 }
 
-header h1 {
-  position: fixed;
-}
-
 h1 {
   font-size: 40px;
   font-weight: bold;

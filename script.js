@@ -12,7 +12,8 @@ let mouse = {
   y: null,
   radius: (canvas.height / 80) * (canvas.width / 80),
 };
-//event listener for mouse when it mobes
+
+//event listener for mouse when it moves
 window.addEventListener("mousemove", function (event) {
   mouse.x = event.x;
   mouse.y = event.y;
@@ -31,7 +32,6 @@ class Particle {
   }
 
   //method to draw individual particle
-
   draw() {
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
@@ -95,7 +95,6 @@ function init() {
 }
 
 //check if particles are close
-
 function connect() {
   let opacityValue = 1;
   for (let a = 0; a < particlesArray.length; a++) {
@@ -119,7 +118,6 @@ function connect() {
 }
 
 //animation loop
-
 function animate() {
   requestAnimationFrame(animate);
   ctx.clearRect(0, 0, innerWidth, innerHeight);
