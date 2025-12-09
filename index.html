@@ -12,22 +12,23 @@
     <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.loom.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body style="scroll-behavior: smooth">
     <header>
       <nav>
         <ul>
-          <li><a href="#theFirstImage">Home</a></li>
-          <li><a href="#survey">Porfolio</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#presentations">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
-      <h1>my Webpage</h1>
+      <h1>Portfolio</h1>
       <div class="svgs">
         <div class="svg1-container">
           <svg
@@ -67,31 +68,28 @@
         <h1 class="green">About Me</h1>
         <p class="typeText">I'm a passionate developer</p>
         <p class="typeText">with experience in front-end web development</p>
-        <p class="typeTextII">and system automatization solutions.</p>
+        <p class="typeTextII">and system automation solutions.</p>
       </section>
 
       <section id="skills-section">
-        <legend>
-          <h1 class="green">My skills</h1>
+        <div class="skills-container">
+          <h1 class="green">My Skills</h1>
           <div class="framework-icons">
             <i class="fab fa-react react"></i>
             <i class="fab fa-angular angular"></i>
-            <i class="fab fa-vuejs vue"></i>
             <i class="fab fa-node node"></i>
-            <i class="fab fa-php php"></i>
             <i class="fab fa-js js"></i>
-
-            <!-- For Laravel -->
+            <i class="fab fa-aws aws"></i>
+            <i class="fab fa-microsoft azure"></i>
           </div>
-        </legend>
+        </div>
         <button
           id="last-btn"
           class="buttons"
-          onclick="const link=document.createElement('a');link.href='./Alejandro_CV_(2024).pdf';link.download='Alejandro_CV_(2024).pdf';link.click();"
+          onclick="const link=document.createElement('a');link.href='./Alejandro_Professional_CV_(2026).pdf';link.download='Alejandro_Professional_CV_(2026).pdf';link.click();"
         >
           Download CV
         </button>
-        <!-- Add more projects as needed -->
       </section>
     </main>
     <canvas id="canvas1"></canvas>
@@ -108,15 +106,8 @@
         >
       </section>
 
-      <!-- <img
-        id="theFirstImage"
-        src="./img/webdeveloper.jpeg"
-        alt="webpage"
-        width="100%"
-        height="auto"
-      /> -->
       <div class="dividers"></div>
-      <div class="words1">
+      <div class="words1" id="presentations">
         <h1 class="green">Presentations</h1>
       </div>
 
@@ -133,6 +124,7 @@
             src="https://www.loom.com/embed/3b55918fc74d49099f9fb3d5b3b803d7?sid=6755b290-fdaf-491d-a2d7-423b67c58a65"
             frameborder="0"
             allow="fullscreen; web-share"
+            loading="lazy"
             style="
               position: absolute;
               top: 0;
@@ -152,6 +144,7 @@
           webkitallowfullscreen
           mozallowfullscreen
           allowfullscreen
+          loading="lazy"
           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
         ></iframe>
       </div>
@@ -164,6 +157,7 @@
           webkitallowfullscreen
           mozallowfullscreen
           allowfullscreen
+          loading="lazy"
           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
         ></iframe>
       </div>
@@ -180,19 +174,12 @@
           webkitallowfullscreen
           mozallowfullscreen
           allowfullscreen
+          loading="lazy"
           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
         ></iframe>
       </div>
       <div class="dividers"></div>
-      <!-- <h1 class="green">React Specialty</h1>
 
-      <img
-        id="theSecondImage"
-        src="./img/react2.png"
-        alt="webpage"
-        width="100%"
-        height="auto"
-      /> -->
       <div class="dividers"></div>
       <h1 class="green">Let's connect!</h1>
 
@@ -220,19 +207,18 @@
           >
             Send
           </button> -->
-          <div class="soMe-container">
-            <div class="soMeLinks one">
-              <a
-                href="https://www.linkedin.com/in/alejandro-gispert/"
-                target="_blank"
-                ><i class="fab fa-linkedin-in"></i> LinkedIn</a
-              >
-              <a href="https://github.com/AlejandroGispert" target="_blank"
-                ><i class="fab fa-github"></i> GitHub</a
-              >
-            </div>
+        <div class="soMe-container">
+          <div class="soMeLinks one">
+            <a
+              href="https://www.linkedin.com/in/alejandro-gispert/"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i> LinkedIn</a
+            >
+            <a href="https://github.com/AlejandroGispert" target="_blank"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
           </div>
-        </form>
+        </div>
       </section>
     </aside>
 
@@ -256,6 +242,5 @@
     </footer>
 
     <script src="./script.js"></script>
-    <script src="./script2.js"></script>
   </body>
 </html>

@@ -126,6 +126,21 @@ section {
 .js:hover {
   color: rgb(234, 236, 88);
 }
+.aws:hover {
+  color: #ff9900;
+}
+.azure:hover {
+  color: #0078d4;
+}
+.typescript:hover {
+  color: #3178c6;
+}
+.nextjs:hover {
+  color: #000000;
+}
+.tailwind:hover {
+  color: #06b6d4;
+}
 
 .soMe-container {
   text-align: center;
@@ -171,17 +186,20 @@ footer {
 }
 
 .buttons {
-  margin-top: 8%;
+  margin-top: 9%;
   border-radius: 50px;
   padding: 10px;
-  background-color: #fc9366;
+  background-color: #049295;
   border: none;
-  color: black;
+  color: white;
   font-size: medium;
+  transition: all 0.3s ease;
 }
 .buttons:hover {
-  color: white;
-  background-color: black;
+  color: #049295;
+  background-color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(4, 146, 149, 0.3);
 }
 
 /* --------------------------aside */
@@ -190,6 +208,16 @@ aside h1 {
 }
 #description-sectionII {
   margin: 25% 0;
+}
+
+#description-sectionII p {
+  margin: 40px 0;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#description-sectionII .buttons {
+  margin-top: 30px;
 }
 
 .green {
@@ -246,8 +274,9 @@ aside h1 {
 
 #contact {
   text-align: center;
-  height: 400px;
-  padding: 10%;
+  height: auto;
+  min-height: 200px;
+  padding: 3% 5%;
   background-color: black;
 }
 #form {
@@ -371,6 +400,6 @@ aside h1 {
   }
   .typeText,
   .typeTextII {
-    font-size: 7gipx;
+    font-size: 7px;
   }
 }
